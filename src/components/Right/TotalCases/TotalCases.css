@@ -1,0 +1,125 @@
+.total-cases {
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.total-cases-heading {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 15px auto;
+}
+
+.total-cases-heading h3 {
+  font-size: 1.3rem;
+  color: #888;
+  font-weight: 500;
+  padding: 0;
+  margin: 5px 0;
+}
+
+.cases-num {
+  height: auto;
+  width: 95%;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2f3d41;
+  margin: 0 auto;
+}
+
+.cases-bar {
+  width: 96%;
+  height: 10px;
+  border-radius: 20px;
+  margin: 10px auto;
+}
+
+.active-bar,
+.recovered-bar,
+.fatal-bar {
+  display: inline-block;
+  height: 16px;
+  transition: 400ms ease-out;
+  padding: 0;
+  margin: 0;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 15px;
+}
+
+.active-bar {
+  background-color: #cb2d6f;
+}
+.recovered-bar {
+  background-color: #14a098;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.fatal-bar {
+  background-color: #0f292f;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.total-list {
+  width: 95%;
+  height: auto;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.list-case {
+  width: 100%;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  margin: 20px 0;
+  color: #555;
+  font-weight: 500;
+  padding: 0;
+}
+
+.total-legend__recovered {
+  font-size: 0.8rem;
+  color: #14a098;
+}
+.total-legend__active {
+  font-size: 0.8rem;
+  color: #cb2d6f;
+}
+.total-legend__fatal {
+  font-size: 0.8rem;
+  color: #0f292f;
+}
+
+@media screen and (max-width: 1150px) {
+  .total-cases-heading {
+    padding: 0;
+  }
+  .cases-bar {
+    width: 92%;
+  }
+  .total-cases-heading {
+    width: 92%;
+  }
+  .cases-num {
+    width: 92%;
+  }
+  .cases-bar {
+    width: 95%;
+  }
+  .total-list {
+    width: 90%;
+    height: auto;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+}

@@ -1,0 +1,51 @@
+.active-graph,
+.closed-graph {
+  width: 50%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.active-graph {
+  border-right: 2px solid #ddd;
+}
+
+.closed-graph {
+  border-left: 2px solid #ddd;
+}
+
+.active-graph h3,
+.closed-graph h3 {
+  font-size: 1.2rem;
+  color: #888;
+  font-weight: 500;
+  margin: 0;
+  /* padding: 20px 0 15px 15px; */
+}
+
+.graph__info-num {
+  position: absolute;
+}
+
+@media screen and (max-width: 1150px) {
+  .active-graph h3,
+  .closed-graph h3 {
+    font-size: 1.2rem;
+    color: #888;
+    font-weight: 500;
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+  }
+  .active-graph,
+  .closed-graph {
+    width: 49.5%;
+  }
+  .active-graph {
+    border-right: 1px solid #ddd;
+  }
+
+  .closed-graph {
+    border-left: 1px solid #ddd;
+  }
+}

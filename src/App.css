@@ -1,0 +1,14 @@
+.app {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 1150px) {
+  .app {
+    flex-direction: column;
+    height: auto;
+  }
+}
