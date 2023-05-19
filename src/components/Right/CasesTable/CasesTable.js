@@ -54,7 +54,9 @@ export default function CasesTable(props) {
                 }
               >
                 <div className="row-country attribute">
-                  {`#${index + 1} `}
+                  {`#${
+                    sortType === "desc" ? sortedData.length - index : index + 1
+                  } `}
                   {val.country}
                 </div>
                 <div className="row-cases__total attribute">{val.cases}</div>
