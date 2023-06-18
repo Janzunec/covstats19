@@ -13,7 +13,12 @@
   font-size: 2rem;
   width: 95%;
   height: auto;
-  padding-top: 20px;
+  margin-top: 20px;
+  transition: all 0.1s ease-out;
+}
+
+.logo:hover {
+  color: #cb2d6f;
 }
 
 .links-list {
